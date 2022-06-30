@@ -1,0 +1,14 @@
+tasks:
+  Search Time:
+    robotTaskName: Search Time
+  Send to RASA:
+    robotTaskName: Send to RASA
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+ignoreFiles:
+  - .gitignore
+PATH:
+  - .
+PYTHONPATH:
+  - .

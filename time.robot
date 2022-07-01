@@ -35,7 +35,7 @@ Search Time
     Search for  ${payload}[city]
 
     ${time}=  Get Text  //div[@role='heading' and @aria-level]
-    ${variables}=  Evaluate  {"user": $payload["user"] ,"body": {"name": "EXTERNAL_time_result", "entities": {"timeresult": $time}}}
+    ${variables}=  Evaluate  {"user": $payload["user"] ,"body": {"name": "EXTERNAL_time_result", "entities": {"timeresult": $time, "cityresult": $payload["city"]}}}
 
     Create Output Work Item  variables=${variables}    save=True
     Release Input Work Item  DONE

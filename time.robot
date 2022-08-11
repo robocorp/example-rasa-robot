@@ -30,12 +30,19 @@ Search for
 
 *** Tasks ***
 Search Time
-    Open Google search page
     ${payload}=  Get Work Item Payload
-    Search for  ${payload}[city]
+    TRY
+        Open Google search page
+        Search for  ${payload}[city]
 
-    ${time}=  Get Text  //div[@role='heading' and @aria-level]
-    ${variables}=  Evaluate  {"user": $payload["user"] ,"body": {"name": "EXTERNAL_time_result", "entities": {"timeresult": $time, "cityresult": $payload["city"]}}}
+        ${time}=  Get Text  //div[@role='heading' and @aria-level]
+        ${variables}=  Evaluate  {"user": $payload["user"] ,"body": {"name": "EXTERNAL_time_result", "entities": {"timeresult": $time, "cityresult": $payload["city"]}}}
+
+    EXCEPT
+        Log To Console    Exception caught in bot run.
+        ${variables}=  Evaluate  {"user": $payload["user"] ,"body": {"name": "EXTERNAL_time_error", "entities": {"errortext": "Bot execution failed for unknown reason.", "cityresult": $payload["city"]}}}
+
+    END
 
     Create Output Work Item  variables=${variables}    save=True
     Release Input Work Item  DONE

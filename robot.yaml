@@ -3,6 +3,8 @@ tasks:
     robotTaskName: Search Time
   Send to RASA:
     robotTaskName: Send to RASA
+  Send to Email:
+    robotTaskName: Send To Email
 
 condaConfigFile: conda.yaml
 artifactsDir: output

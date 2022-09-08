@@ -21,7 +21,7 @@ The purpose is to demonstrate how to set up two-way integrations with chatbots. 
 
 ## Configuration
 
-> This example uses the `rasa.robot` file to return results the the chat conversation. An additional email.robot is included should you want to skip sending the results to Rasa, but want them send to email instead.
+> This example uses the `rasa.robot` file to return results the the chat conversation. An additional `email.robot` is included should you want to skip sending the results to Rasa, but want them send to email instead.
 
 In order to set the demo up, please create a robot with two steps in the [Control Room](https://cloud.robocorp.com/).
 

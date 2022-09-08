@@ -21,11 +21,13 @@ The purpose is to demonstrate how to set up two-way integrations with chatbots. 
 
 ## Configuration
 
+> This example uses the `rasa.robot` file to return results the the chat conversation. An additional email.robot is included should you want to skip sending the results to Rasa, but want them send to email instead.
+
 In order to set the demo up, please create a robot with two steps in the [Control Room](https://cloud.robocorp.com/).
 
 <img width="570" alt="Screenshot 2022-07-04 at 12 27 37" src="https://user-images.githubusercontent.com/40179958/177136536-d6a114e5-c50b-4b1d-ac2a-d7e439ea62ce.png">
 
-Also notice that in order for the robot to be able to return results back to Rasa conversations, the robot needs to have access to the Rasa Callback Server. In the example we have set up the robots to run locally in the same environment as the chatbot server using [Robocorp Workforce Agent](https://robocorp.com/docs/control-room/configuring-workforce/overview).
+Also notice that in order for the robot to be able to return results back to Rasa conversations, the robot needs to run locally in the same environment as the chatbot server using [Robocorp Workforce Agent](https://robocorp.com/docs/control-room/configuring-workforce/overview), or otherwise have access to the RASA endpoint.
 
 The exact steps required to configure the process:
 

@@ -1,8 +1,19 @@
 # RASA chatbot triggering a robot excecution
 
-This example consists of two robots: one that gets the current time from Google using browser automation, and one that sends the result back to Rasa chatbot conversation.
+Chatbots and RPA robots are a great match creating great business outcomes together. RPA robots extend the capabilities of conversational user interface to be able to perform tasks with legacy systems that lack simple API connectivity.
 
-The purpose is to demonstrate how to set up two-way integrations with chatbots. While this repo contains the Robot examples, please have a look at the [sister repo](https://github.com/robocorp/example-rasa-chatbot) for the Rasa configuration.
+## What you'll learn with this reference architecture
+
+- Using Control Room API to trigger robots with a work item from chatbot conversations 
+- Using Basic Selenium browser automation with Google.com
+- Using Work Data Management to create work items between robot steps
+- Using `RPA.HTTP` to call a webhook to return data to Rasa conversation
+
+The reference architecture uses Rasa's default chat interfance channel, and takes you through creating chat intents, custom actions and setting up the communications between Rasa and Robocorp.
+
+## Overview
+
+The purpose is to demonstrate how to set up two-way integrations with chatbots. While this repo contains the Robot examples, please have a look at the [sister repo](https://github.com/robocorp/example-rasa-chatbot) for the Rasa configuration. Example consists of two robots: one that gets the current time from Google using browser automation, and one that sends the result back to Rasa chatbot conversation.
 
 [![d2a3a3cec5494782980e5da33fa50630-with-play](https://user-images.githubusercontent.com/40179958/177135673-e96098c4-ee32-4466-853f-c6bfb4ba23c0.gif)](https://www.loom.com/share/d2a3a3cec5494782980e5da33fa50630)
 

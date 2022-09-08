@@ -11,6 +11,8 @@ Chatbots and RPA robots are a great match creating great business outcomes toget
 
 The reference architecture uses Rasa's default chat interfance channel, and takes you through creating chat intents, custom actions and setting up the communications between Rasa and Robocorp.
 
+<img width="1061" alt="Screenshot 2022-09-08 at 12 28 46" src="https://user-images.githubusercontent.com/40179958/189209855-9dc578a7-02fa-4fa0-99af-e68ea1dd5300.png">
+A
 ## Overview
 
 The purpose is to demonstrate how to set up two-way integrations with chatbots. While this repo contains the Robot examples, please have a look at the [sister repo](https://github.com/robocorp/example-rasa-chatbot) for the Rasa configuration. Example consists of two robots: one that gets the current time from Google using browser automation, and one that sends the result back to Rasa chatbot conversation.

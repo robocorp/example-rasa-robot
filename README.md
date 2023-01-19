@@ -1,23 +1,17 @@
 # RASA chatbot triggering a robot excecution
 
-Chatbots and RPA robots are a great match creating great business outcomes together. RPA robots extend the capabilities of conversational user interface to be able to perform tasks with legacy systems that lack simple API connectivity.
+Chatbots and RPA robots are a great match creating great business outcomes together. RPA robots extend the capabilities of conversational user interface to be able to perform tasks with legacy systems that lack simple API connectivity. This robot is made as a part of the solution architecture to demonstrate end-to-end capabilities of platforms when integrated together.
 
-## What you'll learn with this reference architecture
+## What you'll learn with this robot
 
 - Using Control Room API to trigger robots with a work item from chatbot conversations 
 - Using Basic Selenium browser automation with Google.com
 - Using Work Data Management to create work items between robot steps
 - Using `RPA.HTTP` to call a webhook to return data to Rasa conversation
 
-The reference architecture uses Rasa's default chat interfance channel, and takes you through creating chat intents, custom actions and setting up the communications between Rasa and Robocorp.
-
-<img width="1061" alt="Screenshot 2022-09-08 at 12 28 46" src="https://user-images.githubusercontent.com/40179958/189209855-9dc578a7-02fa-4fa0-99af-e68ea1dd5300.png">
-
 ## Overview
 
-The purpose is to demonstrate how to set up two-way integrations with chatbots. While this repo contains the Robot examples, please have a look at the [sister repo](https://github.com/robocorp/example-rasa-chatbot) for the Rasa configuration. Example consists of two robots: one that gets the current time from Google using browser automation, and one that sends the result back to Rasa chatbot conversation.
-
-[![d2a3a3cec5494782980e5da33fa50630-with-play](https://user-images.githubusercontent.com/40179958/177135673-e96098c4-ee32-4466-853f-c6bfb4ba23c0.gif)](https://www.loom.com/share/d2a3a3cec5494782980e5da33fa50630)
+Example consists of two robots: one that gets the current time from Google using browser automation, and one that sends the result back to Rasa chatbot conversation.
 
 ## Configuration
 
